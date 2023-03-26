@@ -45,4 +45,32 @@ namespace TP_MOD6_1302210081
             Console.WriteLine("playCount : " + playCount);
 
         }
+        public void IncreasePlayCount(int n)
+        {
+            if (n <= 10000000)
+            {
+                for (playCount = 0; playCount <= n; playCount++)
+                {
+
+                }
+
+                int z = 0;
+                try
+
+                {
+                    z = checked(n + 10);
+                }
+                catch (System.OverflowException e)
+                {
+
+                    Console.WriteLine("Check : " + e.ToString());
+
+                    Console.WriteLine("Melebihi batas input");
+                }
+            }
+        }
+
+
     }
+}
+
